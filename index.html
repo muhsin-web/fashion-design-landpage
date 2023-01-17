@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <div class="logo">O K Y D <br>Couture</div>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Unisex Wears</a></li>
+                <li><a href="">Kid Wears</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="nav_toggler" hidden>Menu</div>
+        </nav>
+    </header>
+
+
+    <!-- ################## HERO SECTION ################ -->
+
+
+    <div class="hero">
+        <div class=" hero_banner container">
+            <div class="banner_1">
+                Tailoring Your <br> Way Into Something <br> Astonning. <br>
+
+                <a href="#" class="btn">CHECK OUT</a>
+            </div>
+
+            <div class="banner_2">
+                Book an appointment with us, <br><b> O K Y D</b> is always available <br> to satisfy you and your <br> looks into Something amazing. <br>
+
+                <a href="#" class="btn book">BOOK NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ################## HERO SECTION END ################ -->
+
+    <!-- ################## UNISEX WEARS START ################ -->
+
+
+    <div class="unisex_sec container">
+        <div class="sec_header"><h3>UNISEX WEARS</h3></div>
+
+        <div class="card_lot">
+            <div class="card">
+                <div class="card_img"><img src="" alt=""></div>
+                <div class="card_img-description">
+
+                </div>
+                <div class="sales_off"><h4>SALES OFF</h4></div>
+            </div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+
+
+    <script>
+        let text = "just in: The president of Nigeria has given out a new bill base on the on going ASUU strike for putting Nigeria syudent on breeak for seven month now, he said he is so this heartened to hear about this shameful act that the ASUU has come up with to spoil his tenure, when he is just about to leave office, he sincerly apologiez to all Nigeria student and also the parent of this children";
+        let utterance = new SpeechSynthesisUtterance(text);
+
+        document.querySelector(".book").onclick = () => {
+            // utterance.lang = 'en-';
+
+            utterance.pitch = (5);
+            speechSynthesis.speak(utterance);
+        }
+
+
+    </script>
+</body>
+</html>

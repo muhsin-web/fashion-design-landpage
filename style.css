@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(17, 10, 21);
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17, 10, 21);
+    box-shadow: 1px 2px 10px rgba(98, 67, 105, 0.281);
+}
+
+.logo{
+    font-size: 1.1rem;
+}
+ul, nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+
+}
+ul li{
+    margin-right: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+/* ############ HERO SECTION ########### */
+.hero{
+    height: 90vh;
+}
+
+
+/* ######### REUSEABLES ########## */
+a{
+
+    text-decoration: none;
+    color: #ccc;
+}
+
+.hero_banner.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container .banner_1{
+    font-size: 2.5rem;
+}
+.container .banner_2{
+    font-size: 1.5rem;
+    line-height: 35px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.banner_1 .btn{
+    background-color: rgb(199, 12, 199);
+}
+.banner_2 .btn{
+    border-color: rgb(199, 12, 199);
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.unisex_sec{
+    height: 100vh;
+}
+
+.card_lot{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+
+
+/* ######### REUSEABLES ########## */
+.btn{
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+.container{
+    max-width: 1050px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.sec_header{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 60px 0;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+}
+.sec_header::before{
+    content: " ";
+    width: 100px;
+    height: 3px;
+    background-color: #eee;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25%;
+}
+.sec_header::after{
+    content: " ";
+    width: 100px;
+    height: 3px;
+    background-color: #eee;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.card{
+    /* width: 100px;*/
+    /* height: 120px;  */
+    border: 1px solid white;
+    position: relative;
+}
+.sales_off{
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    transform: rotate(90deg);
+    background-color: red;
+    padding: 10px;
+}
